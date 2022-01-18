@@ -31,11 +31,22 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
-  background-color: #f8f8f8;
+  background-color: #fff;
 }
  {
   /*gnb영역S*/
 }
+.xsSignUpButton {
+  display: none;
+  color: #36f;
+  font-size: 14px;
+  line-height: 32px;
+  height: 34px;
+  border: 1px solid #36f;
+  border-radius: 17px;
+  padding: 0 14px;
+}
+
 .NavBar {
   width: 100%;
   position: fixed;
@@ -46,9 +57,6 @@ body {
 }
 
 .MainBar_MainBar {
-  margin: 0 auto;
-  height: 50px;
-  width: 87.72%;
   position: relative;
   max-width: 1060px;
 }
@@ -64,6 +72,7 @@ body {
 .MainBar_MainBar_nav_top {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .MainBar_MainBar_nav_top_logo {
@@ -134,7 +143,6 @@ ul {
 }
 
 .Menu_className .xsHomeButton {
-  display: none;
   box-shadow: inset 0 -2px #258bf7;
 }
 
@@ -163,6 +171,9 @@ ul {
   padding: 15px;
   display: inline-block;
 }
+aside {
+  display: block;
+}
 
 .Aside_className {
   height: 100%;
@@ -184,10 +195,13 @@ ul {
   font-weight: 600;
   line-height: 1;
 }
+.Aside_className ul li > * {
+  padding: 0 5px;
+}
 
 .Aside_className ul li .searchButton {
   position: relative;
-  margin: 5px 10px 0 10px;
+  margin-top: 5px;
 }
 
 .Aside_className ul li .searchButton g {
@@ -201,7 +215,6 @@ ul {
 }
 
 .Aside_className ul li .signUpButton {
-  padding: 0 10px;
   margin-right: 6px;
 }
 
@@ -245,56 +258,126 @@ ul {
  {
   /*캐러셀S*/
 }
-.Main {
-  padding-top: 25px;
+.main {
   background-color: #fff;
-}
-main {
   display: block;
 }
 
-.slide_wrap {
-  height: auto;
-  position: relative;
-  overflow: hidden;
-  width: 1100vw;
-}
-
-.slide_box {
-  margin-bottom: 0;
-  position: relative;
-  display: block;
-  box-sizing: border-box;
-  user-select: none;
-  overflow-x: hidden;
-}
-
-.slide_list {
-  padding: 0px 50px;
-  position: relative;
-  overflow: hidden;
-  display: block;
-  margin: 0px;
-}
-
-.Main img {
+.main img {
   display: inline-block;
   width: 100%;
-  height: 100%;
+  height: 300px;
   border-radius: 4px;
   object-fit: cover;
+  position: relative;
+}
+.Image_Image {
+  margin: 20px 10px;
 }
 
-.slide_content {
-  outline: none;
-  width: 1060px;
-  padding: 0 12px;
+.information {
+  text-align: center;
+}
+
+.information > h2 {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+  color: #333;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.information h3 {
+  margin-top: 6px;
+  font-size: 13px;
+  line-height: 1.15;
+  color: #666;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.divider {
+  display: none;
+  height: 1px;
+  margin: 0;
+  border: none;
+  flex-shrink: 0;
+  background-color: #ececec;
+}
+
+hr {
   box-sizing: content-box;
+  unicode-bidi: isolate;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  overflow: hidden;
+}
+
+.Information_Information__directButton__8Kgp3 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  color: #36f;
+  height: 40px;
+  padding: 6px 8px;
   position: relative;
-  display: block;
-  float: left;
-  height: 100%;
-  min-height: 1px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  min-width: 64px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.Button_Button__label__1Kk0v {
+  width: 100%;
+  font-size: inherit;
+  font-weight: inherit;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  color: inherit;
+}
+
+.Button_Button__endIcon__MpDfc {
+  margin-top: -2px;
+  margin-right: -1px;
+  margin-left: 2px;
+}
+
+.SvgIcon_SvgIcon__root__8vwon {
+  width: 100%;
+  display: flex;
+  align-items: inherit;
+  justify-content: inherit;
+}
+
+.vgIcon_SvgIcon__root__svg__DKYBi {
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentColor;
+  flex-shrink: 0;
+  font-size: inherit;
+}
+.SvgIcon_SvgIcon__root__svg__DKYBi {
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentColor;
+  flex-shrink: 0;
+  font-size: inherit;
 }
 
 .next {
@@ -338,6 +421,226 @@ main {
   background-color: #fff;
   font-size: 16px;
 }
+
  {
   /*캐러셀E*/
+}
+
+@media (min-width: 1200px) {
+  .main {
+    padding-top: 25px;
+  }
+  .slide_content {
+    padding: 0 12px;
+  }
+  .Image_Image {
+    margin: 0;
+  }
+  .MainBar_MainBar {
+    margin: 0 auto;
+    height: 50px;
+    width: 87.72%;
+  }
+  .Menu_className .xsHomeButton {
+    display: none;
+  }
+  .Aside_className ul li .signUpButton {
+    padding: 0 10px;
+  }
+  .Aside_visibleMenu {
+    display: none !important;
+  }
+
+  .information {
+    position: absolute;
+    bottom: 28px;
+    width: 330px;
+    height: 146px;
+    border-radius: 4px;
+    background-color: #fff;
+    opacity: 1;
+    text-align: left;
+    left: 34px;
+  }
+  .information > h2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .information > h3 {
+    margin: 0 20px;
+    height: 44px;
+    font-size: 14px;
+    line-height: 1.64;
+    color: #333;
+  }
+  .Information_Information__directButton__8Kgp3 {
+    margin: 6px 0 0 13px;
+  }
+  .divider {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .MainBar_MainBar {
+    margin: 0 auto;
+    height: 50px;
+    width: 90%;
+  }
+  .Menu_className {
+    display: flex;
+    flex: 1 1;
+    justify-content: space-evenly;
+  }
+  .Menu_className li a {
+    font-size: 13px;
+    padding: 15px 0;
+  }
+  .Menu_className .xsHomeButton {
+    display: none;
+  }
+  .Aside_className > ul li .signUpButton {
+    margin-right: 0;
+    padding: 0 3px;
+  }
+  .Aside_className > ul li .dashboardButton {
+    margin: 0;
+  }
+  .Aside_visibleMenu {
+    display: none !important;
+  }
+  .Image_Image {
+    height: 183px;
+    border-radius: 3px 3px 0 0;
+  }
+  .Image_Image > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .Image_Image > img {
+    height: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .MainBar_MainBar {
+    height: 110px;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .Menu_className {
+    justify-content: flex-start;
+    margin-right: 30px;
+  }
+  .Menu_className li a {
+    font-size: 13px;
+    padding: 11px 10px 19px;
+  }
+  .MainBar_MainBar_nav_top {
+    padding: 15px 0;
+    height: 60px;
+    width: 100%;
+  }
+  .Menu_className {
+    justify-content: flex-start;
+    margin-right: 30px;
+  }
+  .xsSignUpButton {
+    display: inline-block;
+  }
+  .Menu_className .xsHomeButton {
+    display: none;
+  }
+  .Aside_className > ul li .searchButton {
+    margin: 0;
+  }
+  .Aside_className ul li .signUpButton {
+    display: none;
+  }
+  .leftDivision {
+    display: none;
+  }
+  .Aside_className ul .leftDivision {
+    display: none;
+  }
+  .Padding {
+    height: 110px;
+  }
+  .Image_Image {
+    height: 183px;
+    border-radius: 3px 3px 0 0;
+  }
+  .Image_Image > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .Image_Image > img {
+    height: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .MainBar_MainBar {
+    height: 110px;
+  }
+  .Menu_className {
+    text-align: left;
+  }
+  .MainBar_MainBar_nav_top {
+    height: 60px;
+    width: 100%;
+    padding: 15px 20px;
+  }
+  .xsSignUpButton {
+    display: inline-block;
+  }
+  .Menu_className {
+    text-align: left;
+  }
+  .Menu_className li a {
+    padding: 11px 10px 19px;
+  }
+  .Menu_className .smMoreVisible {
+    display: none;
+  }
+  .Aside_className {
+    padding: 14px 0;
+  }
+  .Aside_className ul {
+    margin-top: -5px;
+  }
+  .Aside_className ul li .searchButton {
+    margin: 0;
+  }
+  .Aside_className ul li .signUpButton {
+    display: none;
+  }
+  .leftDivision {
+    display: none;
+  }
+  .Aside_className ul .leftDivision {
+    display: none;
+  }
+  .Padding {
+    height: 110px;
+  }
+  .Image_Image {
+    height: 183px;
+    border-radius: 3px 3px 0 0;
+  }
+  .Image_Image > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .Image_Image > img {
+    height: 100%;
+  }
 }
